@@ -63,6 +63,8 @@ public class Subtitles : MonoBehaviour
         if (text == null || text.Length == 0) { _currentCoroutine = null; yield break; }
         if (textTime == null || textTime.Length < text.Length) { _currentCoroutine = null; yield break; }
 
+        EnsureLongTextSupport();
+
         // Обычный цикл — никакой рекурсии
         for (int i = 0; i < text.Length; i++)
         {
@@ -72,5 +74,38 @@ public class Subtitles : MonoBehaviour
 
         subtitleText.SetText("");
         _currentCoroutine = null;
+    }
+
+    /// <summary>
+    /// Показать один длинный текст целиком на заданное время.
+    /// Удобно для полных монологов Фон Гая из лора.
+    /// </summary>
+    public void ShowFullText(string fullText, float displayTime)
+    {
+        ResetSubtitles();
+        _currentCoroutine = StartCoroutine(RunFullText(fullText, displayTime));
+    }
+
+    IEnumerator RunFullText(string fullText, float displayTime)
+    {
+        if (subtitleText == null) { _currentCoroutine = null; yield break; }
+
+        EnsureLongTextSupport();
+        subtitleText.SetText(fullText);
+
+        yield return new WaitForSecondsRealtime(Mathf.Max(0.5f, displayTime));
+
+        subtitleText.SetText("");
+        _currentCoroutine = null;
+    }
+
+    /// <summary>
+    /// Настраивает TMP так, чтобы длинные тексты переносились и не обрезались.
+    /// </summary>
+    void EnsureLongTextSupport()
+    {
+        if (subtitleText == null) return;
+        subtitleText.textWrappingMode = TMPro.TextWrappingModes.Normal;
+        subtitleText.overflowMode = TMPro.TextOverflowModes.Overflow;
     }
 }
