@@ -1,0 +1,40 @@
+# Unity generated
+Library/
+Temp/
+obj/
+Build/
+Builds/
+Logs/
+UserSettings/
+
+# VS / Rider
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# OS generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# JetBrains
+.idea/
+*.iml
+
+# VS Code
+.vscode/
