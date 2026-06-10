@@ -38,6 +38,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] GameObject flashlight;
     [SerializeField] GameObject hallwayBlockers;  // туман/темнота в коридорах
 
+    [Header("Скример — полноэкранная картинка")]
+    [SerializeField] GameObject jumpscareImageObject;     // объект на Canvas (изначально выключен)
+    [SerializeField] Image jumpscareImage;                // Image на весь экран
+    [SerializeField] Sprite[] jumpscareSprites;           // [0]=Freddo [1]=Bonita [2]=ChikaLoka [3]=FoxyRex [4]=GLITCH
+
     [Header("Пасхалка windy31")]
     [SerializeField] GameObject easterEggPanel;   // панель с надписью "windy31"
     [SerializeField] AudioSource easterEggSound;
@@ -269,7 +274,9 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // ─── Game Over (скример) ──────────────────────────────────────────────────
-    public void GameOver(GameObject jsModel)
+    public void GameOver(GameObject jsModel) => GameOver(jsModel, -1);
+
+    public void GameOver(GameObject jsModel, int animatronicID)
     {
         if (!alive) return;
         alive = false;
@@ -285,6 +292,10 @@ public class PlayerMovement : MonoBehaviour
 
         if (jsModel != null) jsModel.SetActive(true);
         if (jumpscareObjects != null) jumpscareObjects.SetActive(true);
+
+        // Полноэкранная пугающая картинка аниматроника
+        ShowJumpscareImage(animatronicID);
+
         if (playerUI != null) playerUI.SetActive(false);
         if (playerCam != null) playerCam.enabled = false;
 
@@ -294,6 +305,36 @@ public class PlayerMovement : MonoBehaviour
         if (jumpscareSound != null) jumpscareSound.Play();
 
         StartCoroutine(GameOverScreen());
+    }
+
+    // ─── Полноэкранная картинка скримера ──────────────────────────────────────
+    void ShowJumpscareImage(int animatronicID)
+    {
+        if (jumpscareImageObject == null || jumpscareImage == null) return;
+        if (jumpscareSprites == null || jumpscareSprites.Length == 0) return;
+
+        int idx = (animatronicID >= 0 && animatronicID < jumpscareSprites.Length)
+            ? animatronicID : 0;
+        if (jumpscareSprites[idx] == null) return;
+
+        jumpscareImage.sprite = jumpscareSprites[idx];
+        jumpscareImageObject.SetActive(true);
+        StartCoroutine(JumpscareImagePunch());
+    }
+
+    // Резкое появление: scale от 1.2 до 1.0 за 0.1 сек
+    IEnumerator JumpscareImagePunch()
+    {
+        Transform t = jumpscareImageObject.transform;
+        float dur = 0.1f, elapsed = 0f;
+        while (elapsed < dur)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            float s = Mathf.Lerp(1.2f, 1.0f, elapsed / dur);
+            t.localScale = new Vector3(s, s, 1f);
+            yield return null;
+        }
+        t.localScale = Vector3.one;
     }
 
     // ─── Корутины ─────────────────────────────────────────────────────────────

@@ -198,7 +198,7 @@ public class AnimatronicAI : MonoBehaviour
                     if (camUI != null) camUI.SetActive(false);
                     player.gameObject.SetActive(true);
                 }
-                player.GameOver(jsModel);
+                player.GameOver(jsModel, aiNum);
             }
         }
     }

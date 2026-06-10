@@ -79,6 +79,17 @@ public class TimePass : MonoBehaviour
 
         if (nightNum == 1 && helperText != null) helperText.SetActive(true);
 
+        // Если клип звонка не назначен — генерируем процедурный двухтональный звонок
+        if (phoneRingClip == null) phoneRingClip = GeneratePhoneRingClip();
+
+        // Если источник звонка не назначен — создаём AudioSource во время выполнения
+        if (phoneRingSource == null)
+        {
+            phoneRingSource = gameObject.AddComponent<AudioSource>();
+            phoneRingSource.playOnAwake = false;
+            phoneRingSource.spatialBlend = 0f;
+        }
+
         if (PlayerPrefs.GetString("Drink") == "active")
         {
             PlayerPrefs.SetString("Drink", "not active");
@@ -161,19 +172,24 @@ public class TimePass : MonoBehaviour
 
         if (!hasCall) yield break;
 
-        // Шаг 2: звонит телефон (3 секунды)
+        // Шаг 2: звонит телефон — 3 звонка с паузой 0.5 сек (как настоящий телефон)
         if (phoneRingSource != null && phoneRingClip != null)
         {
             phoneRingSource.clip   = phoneRingClip;
             phoneRingSource.volume = 0.7f;
             phoneRingSource.loop   = false;
-            phoneRingSource.Play();
-            yield return new WaitForSecondsRealtime(phoneRingClip.length > 0 ? Mathf.Min(phoneRingClip.length, 3f) : 3f);
+
+            for (int r = 0; r < 3; r++)
+            {
+                phoneRingSource.Play();
+                yield return new WaitForSecondsRealtime(phoneRingClip.length);
+                if (r < 2) yield return new WaitForSecondsRealtime(0.5f);
+            }
             phoneRingSource.Stop();
         }
         else
         {
-            // Нет клипа звонка — просто ждём 3 секунды
+            // Нет источника звонка — просто ждём 3 секунды
             yield return new WaitForSecondsRealtime(3f);
         }
 
@@ -215,6 +231,32 @@ public class TimePass : MonoBehaviour
                 if (s != null) s.ResetSubtitles();
 
         if (nightCallMuteButton != null) nightCallMuteButton.SetActive(false);
+    }
+
+    // ─── Процедурный звук телефонного звонка ──────────────────────────────────
+    /// <summary>
+    /// Создаёт аудиоклип программно — двухтональный сигнал (425 Гц + 480 Гц),
+    /// как у настоящего телефона, с огибающей нарастания/затухания.
+    /// </summary>
+    AudioClip GeneratePhoneRingClip()
+    {
+        int sampleRate = 44100;
+        float duration = 0.8f;                       // длительность одного звонка
+        int samples = (int)(sampleRate * duration);
+        float[] data = new float[samples];
+
+        for (int i = 0; i < samples; i++)
+        {
+            float t = (float)i / sampleRate;
+            float ring = Mathf.Sin(2f * Mathf.PI * 425f * t) * 0.5f +
+                         Mathf.Sin(2f * Mathf.PI * 480f * t) * 0.5f;
+            float envelope = Mathf.Sin(Mathf.PI * t / duration);
+            data[i] = ring * envelope * 0.7f;
+        }
+
+        AudioClip clip = AudioClip.Create("PhoneRing", samples, 1, sampleRate, false);
+        clip.SetData(data, 0);
+        return clip;
     }
 
     // ─── Счётчик времени (правый верхний угол) ────────────────────────────────

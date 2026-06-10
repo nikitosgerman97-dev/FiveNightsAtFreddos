@@ -216,6 +216,13 @@ public class PostProcessingController : MonoBehaviour
         }
     }
 
+    /// <summary>Включает/выключает пост-обработку целиком (настройки графики).</summary>
+    public void SetEnabled(bool value)
+    {
+        if (globalVolume != null)
+            globalVolume.enabled = value;
+    }
+
     // ─────────────────────────────────────────────────────────────────────────
     // Приватные методы
     // ─────────────────────────────────────────────────────────────────────────
