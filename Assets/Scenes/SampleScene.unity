@@ -1910,19 +1910,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - 
-  - "Yo dude\u2026. Have you ever\u2026 uhhh, how should i put it?"
-  - "Doubted reality? Like has anything ever felt surreal you started questioning
-    if what you\u2019re seeing is even real?"
-  - "Uhh... I\u2019m sorry for yapping. But do keep this in mind and think about
-    it for a bit please\u2026"
-  - "Anyways, new animatronic, i\u2019m sure you know already\u2026 "
-  - "This one is an older version of Peter, that somehow just reappeared? Like i\u2019m
-    sure we\u2019ve disassembled it before, but it just decided to reappear again
-    for no reason\u2026 "
-  - "He never really liked light\u2026 He always lurked in the shadows\u2026"
-  - "Try and shine some light in his eyes if you see him\u2026"
-  - Goodnight.
+  -
+  - "\u0421\u043b\u0443\u0448\u0430\u0439, \u0447\u0443\u0432\u0430\u043a\u2026 \u0422\u044b \u043a\u043e\u0433\u0434\u0430-\u043d\u0438\u0431\u0443\u0434\u044c\u2026 \u044d\u044d\u044d, \u043a\u0430\u043a \u0431\u044b \u044d\u0442\u043e \u0441\u043a\u0430\u0437\u0430\u0442\u044c?"
+  - "\u0421\u043e\u043c\u043d\u0435\u0432\u0430\u043b\u0441\u044f \u0432 \u0440\u0435\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u0438? \u041d\u0443, \u0431\u044b\u0432\u0430\u043b\u043e \u0442\u0430\u043a, \u0447\u0442\u043e \u0432\u0441\u0451 \u043a\u0430\u0437\u0430\u043b\u043e\u0441\u044c \u043d\u0435\u0440\u0435\u0430\u043b\u044c\u043d\u044b\u043c, \u0438 \u0442\u044b
+    \u043d\u0430\u0447\u0438\u043d\u0430\u043b \u0441\u043e\u043c\u043d\u0435\u0432\u0430\u0442\u044c\u0441\u044f, \u043d\u0430\u0441\u0442\u043e\u044f\u0449\u0435\u0435 \u043b\u0438 \u0432\u043e\u043e\u0431\u0449\u0435 \u0442\u043e, \u0447\u0442\u043e \u0442\u044b \u0432\u0438\u0434\u0438\u0448\u044c?"
+  - "\u042d\u044d\u044d... \u0418\u0437\u0432\u0438\u043d\u0438, \u0447\u0442\u043e \u0431\u043e\u043b\u0442\u0430\u044e. \u041d\u043e \u0432\u0441\u0451 \u0436\u0435 \u0434\u0435\u0440\u0436\u0438 \u044d\u0442\u043e \u0432 \u0433\u043e\u043b\u043e\u0432\u0435 \u0438 \u043f\u043e\u0434\u0443\u043c\u0430\u0439 \u043e\u0431 \u044d\u0442\u043e\u043c \u043d\u0435\u043c\u043d\u043e\u0433\u043e,
+    \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430\u2026"
+  - "\u0412 \u043e\u0431\u0449\u0435\u043c, \u043d\u043e\u0432\u044b\u0439 \u0430\u043d\u0438\u043c\u0430\u0442\u0440\u043e\u043d\u0438\u043a, \u0443\u0432\u0435\u0440\u0435\u043d, \u0442\u044b \u0443\u0436\u0435 \u0437\u043d\u0430\u0435\u0448\u044c\u2026 "
+  - "\u042d\u0442\u043e \u0441\u0442\u0430\u0440\u0430\u044f \u0432\u0435\u0440\u0441\u0438\u044f \u0424\u0440\u0435\u0434\u0434\u043e, \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u043f\u043e\u0447\u0435\u043c\u0443-\u0442\u043e \u0441\u043d\u043e\u0432\u0430 \u043f\u043e\u044f\u0432\u0438\u043b\u0430\u0441\u044c? \u042f \u0432\u0435\u0434\u044c \u0443\u0432\u0435\u0440\u0435\u043d,
+    \u0447\u0442\u043e \u043c\u044b \u0435\u0433\u043e \u0440\u0430\u043d\u044c\u0448\u0435 \u0440\u0430\u0437\u0431\u0438\u0440\u0430\u043b\u0438, \u043d\u043e \u043e\u043d \u0432\u0437\u044f\u043b \u0438 \u0441\u043d\u043e\u0432\u0430 \u043f\u043e\u044f\u0432\u0438\u043b\u0441\u044f \u0431\u0435\u0437 \u0432\u0441\u044f\u043a\u043e\u0439 \u043f\u0440\u0438\u0447\u0438\u043d\u044b\u2026 "
+  - "\u041e\u043d \u043d\u0438\u043a\u043e\u0433\u0434\u0430 \u043d\u0435 \u043b\u044e\u0431\u0438\u043b \u0441\u0432\u0435\u0442\u2026 \u0412\u0435\u0447\u043d\u043e \u043f\u0440\u044f\u0442\u0430\u043b\u0441\u044f \u0432 \u0442\u0435\u043d\u044f\u0445\u2026"
+  - "\u041f\u043e\u043f\u0440\u043e\u0431\u0443\u0439 \u043f\u043e\u0441\u0432\u0435\u0442\u0438\u0442\u044c \u0435\u043c\u0443 \u0432 \u0433\u043b\u0430\u0437\u0430, \u0435\u0441\u043b\u0438 \u0443\u0432\u0438\u0434\u0438\u0448\u044c \u0435\u0433\u043e\u2026"
+  - \u0421\u043f\u043e\u043a\u043e\u0439\u043d\u043e\u0439 \u043d\u043e\u0447\u0438.
   textTime:
   - 9.6
   - 3.42
@@ -4034,7 +4033,6 @@ GameObject:
   - component: {fileID: 281523233}
   - component: {fileID: 281523232}
   - component: {fileID: 281523231}
-  - component: {fileID: 281523230}
   - component: {fileID: 281523239}
   m_Layer: 5
   m_Name: GameOverCanvas
@@ -4043,23 +4041,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &281523230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 281523229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &281523231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4382,14 +4363,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - 
-  - "W\u2026What are you saying?"
-  - "Wait\u2026. No\u2026."
-  - "This explains how he came back\u2026 "
-  - "So this really isn\u2019t reality? "
-  - Mhm...
-  - There's nothing we can do right?
-  - Nothing...
+  -
+  - "\u0427\u2026\u0427\u0442\u043e \u0442\u044b \u0442\u0430\u043a\u043e\u0435 \u0433\u043e\u0432\u043e\u0440\u0438\u0448\u044c?"
+  - "\u0421\u0442\u043e\u0439\u2026. \u041d\u0435\u0442\u2026."
+  - "\u042d\u0442\u043e \u043e\u0431\u044a\u044f\u0441\u043d\u044f\u0435\u0442, \u043a\u0430\u043a \u043e\u043d \u0432\u0435\u0440\u043d\u0443\u043b\u0441\u044f\u2026 "
+  - "\u0417\u043d\u0430\u0447\u0438\u0442, \u044d\u0442\u043e \u0438 \u043f\u0440\u0430\u0432\u0434\u0430 \u043d\u0435 \u0440\u0435\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u044c? "
+  - \u041c\u0445\u043c...
+  - \u041c\u044b \u0432\u0435\u0434\u044c \u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u043c\u043e\u0436\u0435\u043c \u0441\u0434\u0435\u043b\u0430\u0442\u044c, \u0434\u0430?
+  - \u041d\u0438\u0447\u0435\u0433\u043e...
   - ...
   textTime:
   - 9.6
@@ -15617,12 +15598,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - 
-  - Hey! It's me again...
-  - Things have gotten weirder.
-  - 'I''m not going to waste your time since the animatronics will be moving while
-    i''m talking...  Those freaks.... '
-  - What do you mean we're not real?
+  -
+  - Привет! Это снова я...
+  - Всё стало ещё страннее.
+  - 'Не буду тратить твоё время, ведь аниматроники двигаются, пока я говорю... Эти
+    уроды... '
+  - В смысле — мы не настоящие?
   textTime:
   - 10
   - 1.6
@@ -15814,7 +15795,6 @@ GameObject:
   - component: {fileID: 590980645}
   - component: {fileID: 590980648}
   - component: {fileID: 590980647}
-  - component: {fileID: 590980646}
   - component: {fileID: 590980649}
   m_Layer: 5
   m_Name: Canvas (4)
@@ -15843,23 +15823,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &590980646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 590980644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &590980647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16850,8 +16813,8 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &693296572
-MonoBehaviour:
+--- !u!1918431494 &693296572
+GraphicRaycaster:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -16859,9 +16822,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 693296570}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -23158,8 +23118,8 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &807718553
-MonoBehaviour:
+--- !u!1918431494 &807718553
+GraphicRaycaster:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -23167,9 +23127,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 807718551}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -25366,7 +25323,6 @@ GameObject:
   - component: {fileID: 972570029}
   - component: {fileID: 972570032}
   - component: {fileID: 972570031}
-  - component: {fileID: 972570030}
   - component: {fileID: 972570039}
   m_Layer: 5
   m_Name: Canvas (1)
@@ -25394,23 +25350,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &972570030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 972570028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &972570031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29196,7 +29135,7 @@ MonoBehaviour:
   extraPaths: []
   doorHolder: {fileID: 1324271639}
   timePass: {fileID: 1357607887}
-  moveTimerBase: 9.3948
+  moveTimerBase: 24
   aiNum: 0
   animatronicName: Peter
   alive: 1
@@ -30355,8 +30294,8 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1292491061
-MonoBehaviour:
+--- !u!1918431494 &1292491061
+GraphicRaycaster:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -30364,9 +30303,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1292491059}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -31253,19 +31189,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - 
-  - Hello! Uh... Third night huh?
-  - haha... Third... thi...  OH THIRD NIGHT YEAH!
-  - There's a new animatronic that's active tonight. I think his name was Toby?
-  - Uhh, the kids just call him Toby the Tweaker... Because.... well I think you
-    met him already. He runs the shop that sells officially licensed merchandise
-    inside of the building.
-  - 'So uh... I guess look out for him? I don''t think doors will stop him. Try to
-    keep him at bay on the cameras... '
-  - 'There must be something to do there.... Anyways, i''m sure you''ll figure it
-    out... '
-  - Good luck...
-  - I want to learn the truth man... I just want the truth...
+  -
+  - Привет! Эээ... Третья ночь, да?
+  - хаха... Третья... тре... О, ТРЕТЬЯ НОЧЬ, ТОЧНО!
+  - Сегодня активен новый аниматроник. Кажется, его звали Тоби?
+  - Ээ, дети зовут его Тоби-Дёрганый... Потому что... ну, думаю, ты уже с ним
+    встречался. Он держит лавку с официальным мерчем внутри здания.
+  - 'Так что... в общем, последи за ним? Не думаю, что двери его остановят. Попробуй
+    сдерживать его через камеры... '
+  - 'Там наверняка можно что-то сделать... В общем, уверен, ты разберёшься... '
+  - Удачи...
+  - Я хочу узнать правду, чувак... Мне просто нужна правда...
   textTime:
   - 10
   - 3.6
@@ -32834,8 +32768,8 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1461630003
-MonoBehaviour:
+--- !u!1918431494 &1461630003
+GraphicRaycaster:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -32843,9 +32777,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1461630001}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -33905,16 +33836,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - 
-  - H...Hey man... Fourth night huh?
-  - Time sure does fly fast when we're in another reality...
-  - Anyways i'm sure you know the drill by now.
-  - New animatronic... His name is Bib. He was originally made to educate children,
-    but ended up being useless as he was just spewing nonsense like some sort of
-    badly trained AI...
-  - He can't even make up his own mind when moving around.
-  - Keep an eye on him to know where to expect him from.
-  - Good luck man.
+  -
+  - П...Привет, чувак... Четвёртая ночь, да?
+  - Время и правда летит быстро, когда мы в другой реальности...
+  - В общем, уверен, ты уже знаешь, что к чему.
+  - Новый аниматроник... Его зовут Биб. Изначально его сделали обучать детей, но
+    толку от него не было — он нёс какую-то чушь, как плохо обученный ИИ...
+  - Он даже сам не может решить, куда ему идти.
+  - Следи за ним, чтобы знать, откуда его ждать.
+  - Удачи, чувак.
   textTime:
   - 10
   - 2.2
@@ -34289,14 +34219,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - 
-  - "W\u2026What are you saying?"
-  - "Wait\u2026. No\u2026."
-  - "This explains how he came back\u2026 "
-  - "So this really isn\u2019t reality? "
-  - Mhm...
-  - There's nothing we can do right?
-  - Nothing...
+  -
+  - "\u0427\u2026\u0427\u0442\u043e \u0442\u044b \u0442\u0430\u043a\u043e\u0435 \u0433\u043e\u0432\u043e\u0440\u0438\u0448\u044c?"
+  - "\u0421\u0442\u043e\u0439\u2026. \u041d\u0435\u0442\u2026."
+  - "\u042d\u0442\u043e \u043e\u0431\u044a\u044f\u0441\u043d\u044f\u0435\u0442, \u043a\u0430\u043a \u043e\u043d \u0432\u0435\u0440\u043d\u0443\u043b\u0441\u044f\u2026 "
+  - "\u0417\u043d\u0430\u0447\u0438\u0442, \u044d\u0442\u043e \u0438 \u043f\u0440\u0430\u0432\u0434\u0430 \u043d\u0435 \u0440\u0435\u0430\u043b\u044c\u043d\u043e\u0441\u0442\u044c? "
+  - \u041c\u0445\u043c...
+  - \u041c\u044b \u0432\u0435\u0434\u044c \u043d\u0438\u0447\u0435\u0433\u043e \u043d\u0435 \u043c\u043e\u0436\u0435\u043c \u0441\u0434\u0435\u043b\u0430\u0442\u044c, \u0434\u0430?
+  - \u041d\u0438\u0447\u0435\u0433\u043e...
   - ...
   textTime:
   - 9.6
@@ -36353,7 +36283,6 @@ GameObject:
   - component: {fileID: 1754721906}
   - component: {fileID: 1754721905}
   - component: {fileID: 1754721904}
-  - component: {fileID: 1754721903}
   - component: {fileID: 1754721909}
   m_Layer: 5
   m_Name: GameUICanvas
@@ -36362,23 +36291,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1754721903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754721902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
 --- !u!114 &1754721904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36793,9 +36705,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 317009c441fe7894b80889c6cb43dffe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aiNum: 0100000002000000000000000000000000000000
+  m_Name:
+  m_EditorClassIdentifier:
+  aiNum: 0100000000000000000000000000000000000000
 --- !u!114 &1772612717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36809,21 +36721,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text:
-  - 
-  - Hello... hello hellooo.... uuuh.... (why do we keep doing this?)
-  - O... oh... hey, hey!
-  - Welcome to Peter's Restaurant, a place where people of all ages come to enjoy
-    various foods and beverages.
-  - 'You know what, who even cares about all of this corporate stuff. I''ll just
-    tell you the situation straight up. '
-  - 'Some of our animatronic mascots have been acting up. I guess you can say they
-    get the zoomies during the night... '
-  - Yeah.... So for tonight.... uhhhh... its gonna be Peter, the grey bear...
-  - 'And Ben I believe? One of our old animatronics we keep in the basement for...
-    reasons we don''t talk about.... '
-  - Anways, just watch out for them... Use your doors if needed and try not to run
-    out of power.
-  - Goodnight.
+  -
+  - Алло... алло, слышишь меня?... эээ... (и зачем мы каждый раз это делаем?)
+  - А... о... привет, привет!
+  - Добро пожаловать в «Весёлый Фреддо» — место, куда люди всех возрастов приходят
+    отведать вкусной еды и напитков.
+  - 'Знаешь что, да кому нужны все эти корпоративные речи. Скажу тебе всё как есть,
+    напрямую. '
+  - 'Кое-кто из наших аниматроников немного шалит по ночам. Можно сказать, на них
+    нападает ночная резвость... '
+  - Да... В общем, сегодня ночью... эээ... это будет Фреддо, серый медведь...
+  - 'И ещё Бен, кажется? Один из наших старых аниматроников, которого мы держим в
+    подвале по... причинам, о которых мы не говорим... '
+  - В общем, просто следи за ними... Закрывай двери, если надо, и старайся не остаться
+    без энергии.
+  - Спокойной ночи.
   textTime:
   - 9.6
   - 4.5
@@ -37268,7 +37180,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1805867888}
-  - component: {fileID: 1805867890}
   - component: {fileID: 1805867889}
   m_Layer: 0
   m_Name: Cube.005 (1)
@@ -46101,8 +46012,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1975151955}
-  - component: {fileID: 1975151957}
-  - component: {fileID: 1975151956}
   m_Layer: 0
   m_Name: Cube.006 (1)
   m_TagString: Untagged
@@ -47305,8 +47214,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2099428524
-MonoBehaviour:
+--- !u!1918431494 &2099428524
+GraphicRaycaster:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -47314,9 +47223,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2099428523}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -48501,8 +48407,6 @@ GameObject:
   - component: {fileID: 9912002011}
   - component: {fileID: 9912002012}
   - component: {fileID: 9912002013}
-  - component: {fileID: 9912002014}
-  - component: {fileID: 9912002015}
   m_Layer: 5
   m_Name: MasterVolumeSlider
   m_TagString: Untagged
@@ -49753,8 +49657,8 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 0
---- !u!114 &957000005
-MonoBehaviour:
+--- !u!1918431494 &957000005
+GraphicRaycaster:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -49762,9 +49666,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 957000001}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
