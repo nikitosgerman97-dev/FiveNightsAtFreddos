@@ -100,7 +100,8 @@ public class PostProcessingController : MonoBehaviour
 
         if (globalVolume == null)
         {
-            Debug.LogError("[PostProcessingController] Не найден компонент Volume!");
+            // FIXED: LogWarning вместо LogError — отсутствие Volume не критично, скрипт просто бездействует
+            Debug.LogWarning("[PostProcessingController] Не найден компонент Volume — пост-обработка отключена.");
             return;
         }
 

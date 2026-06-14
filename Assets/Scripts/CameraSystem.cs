@@ -26,10 +26,15 @@ public class CameraSystem : MonoBehaviour
 
     int prevCam = 0;
     public bool camUp = false;
+    bool isTransitioning = false;   // FIXED: защита от спама ПКМ во время анимации открытия/закрытия
 
     // ─── Открытие планшета (через анимацию) ─────────────────────────────────
     public void CamPlayAnim()
     {
+        // FIXED: если планшет уже в процессе открытия/закрытия — игнорируем повторный ПКМ
+        if (isTransitioning) return;
+        isTransitioning = true;
+
         if (!camUp && camObjAnim != null)
             camObjAnim.Play("CamOpenAnim", 0, 0);
 
@@ -107,6 +112,9 @@ public class CameraSystem : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(0.2f);
         CameraSwitch();
+        // FIXED: снимаем блокировку после завершения анимации закрытия (или открытия)
+        yield return new WaitForSecondsRealtime(0.3f);
+        isTransitioning = false;
     }
 
     IEnumerator ResetStaticAnim()

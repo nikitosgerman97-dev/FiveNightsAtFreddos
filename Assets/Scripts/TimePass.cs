@@ -119,7 +119,24 @@ public class TimePass : MonoBehaviour
     public string GetNightDialogue(int night)
     {
         night = Mathf.Clamp(night, 1, 7);
+        return GetLocalizedPhoneGuyLine(night - 1);
+    }
 
+    /// <summary>
+    /// Возвращает текст диалога Фон Гая для ночи (nightIndex 0-based).
+    /// Приоритет: локализация (если язык не RU) → JSON → вшитый русский массив.
+    /// </summary>
+    private string GetLocalizedPhoneGuyLine(int nightIndex)
+    {
+        // 1. Локализация для не-русских языков
+        if (LanguageManager.Instance != null)
+        {
+            string localized = LanguageManager.Instance.GetPhoneGuyLine(nightIndex);
+            if (!string.IsNullOrEmpty(localized)) return localized;
+        }
+
+        // 2. Русский текст из Resources/Lore/PhoneGuyDialogues.json
+        int night = nightIndex + 1;
         var data = LoadDialogueData();
         if (data != null && data.nights != null)
         {
@@ -128,11 +145,18 @@ public class TimePass : MonoBehaviour
                     return entry.dialogue;
         }
 
-        int idx = night - 1;
-        if (phoneGuyLines != null && idx >= 0 && idx < phoneGuyLines.Length)
-            return phoneGuyLines[idx];
+        // 3. Вшитый русский массив
+        if (phoneGuyLines != null && nightIndex >= 0 && nightIndex < phoneGuyLines.Length)
+            return phoneGuyLines[nightIndex];
 
         return string.Empty;
+    }
+
+    /// <summary>Устанавливает громкость голоса Фон Гая (настройки звука).</summary>
+    public void SetPhoneGuyVolume(float value)
+    {
+        if (phoneCallPlayer != null)
+            phoneCallPlayer.volume = value;
     }
 
     PhoneGuyDialogueData _dialogueCache;
@@ -193,17 +217,18 @@ public class TimePass : MonoBehaviour
             yield return new WaitForSecondsRealtime(3f);
         }
 
-        // Шаг 3: Фон Гай начинает говорить
+        // Шаг 3: Фон Гай начинает говорить (громкость из настроек)
         phoneCallPlayer.clip   = nightCalls[callIdx];
-        phoneCallPlayer.volume = 0.85f;
+        phoneCallPlayer.volume = PlayerPrefs.GetFloat("PhoneGuyVolume", 0.85f);
         phoneCallPlayer.Play();
         phoneIsActive = true;
 
         // Уменьшаем фоновую музыку пока говорит гай
         if (ambiencePlayer != null) ambiencePlayer.volume = 0.1f;
 
-        // Субтитры
-        if (subtitles != null && callIdx < subtitles.Length && subtitles[callIdx] != null)
+        // Субтитры (только если включены в настройках)
+        bool showSubs = PlayerPrefs.GetInt("Subtitles", 1) == 1;
+        if (showSubs && subtitles != null && callIdx < subtitles.Length && subtitles[callIdx] != null)
             subtitles[callIdx].StartSubtitles();
 
         if (nightCallMuteButton != null) nightCallMuteButton.SetActive(true);
